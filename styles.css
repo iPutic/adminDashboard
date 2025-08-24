@@ -26,13 +26,15 @@ li, ul {
     display: flex;
     flex-direction: column;
     padding: 20px;
-    background-color: #70c8eb;
+    background-color: #1992d4;
     gap: 40px;
+    color: white;
 }
 
 .sideBar img {
     width: 32px;
     height: auto;
+    filter: invert(100%);
 }
 
 .sideBar .top img {
@@ -64,4 +66,3 @@ li, ul {
     font-weight: 600;
     align-items: center;
 }
-
