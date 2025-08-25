@@ -130,7 +130,6 @@ header .greet {
     grid-template-columns: auto 1fr;
     align-items: center;
     gap: 12px;
-    padding-top: 20px;
 }
 
 header .greet .profilePicture {
