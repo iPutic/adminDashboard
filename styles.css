@@ -74,52 +74,16 @@ header {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: repeat(5, 1fr);
-    padding: 20px;
+    padding: 20px 48px 8px 48px;
     background-color: #ffffff;
 }
 
 header .searchBar {
     grid-area: 1 / 1 / 3 / 4;
-    align-self: center;
-}
-
-header .miniProfile {
-    grid-area: 1 / 4 / 3 / 6;
-    align-self: center;
-}
-
-header .greet {
-    grid-area: 3 / 1 / 6 / 3;
-    align-self: center;
-}
-
-header .buttons {
-    grid-area: 3 / 4 / 6 / 6;
-    align-self: center;
-}
-
-header ul {
-    display: flex;
-    align-items: center;
-}
-
-header .searchBar {
-    display: flex;
-    height: 100%;
-}
-
-header .searchBar li {
-    display: flex;
-    height: auto;
-}
-
-header .searchBar ul {
-    gap: 8px;
     display: grid;
     grid-template-columns: auto 1fr;
     align-items: center;
     gap: 8px;
-    width: 100%;
 }
 
 header .searchBar input {
@@ -136,19 +100,18 @@ header .searchBar img {
 }
 
 header .miniProfile {
-    display: flex;
-    justify-content: center;
-}
-
-header .miniProfile ul {
-    display: flex;
+    grid-area: 1 / 4 / 3 / 6;
+    display: grid;
+    grid-auto-flow: column;
+    align-items: center;
+    justify-content: end;
     gap: 28px;
 }
 
 header .miniProfile .profilePictureMini {
-    width: 48px;
+    width: 40px;
     height: auto;
-    border-radius: 30px;
+    border-radius: 20px;
 }
 
 header .miniProfile img {
@@ -156,8 +119,40 @@ header .miniProfile img {
     height: auto;
 }
 
-header .miniProfile li {
+header .miniProfile p {
     font-weight: 700;
     font-size: x-large;
 }
 
+header .greet {
+    grid-area: 3 / 1 / 6 / 2;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    gap: 12px;
+    padding-top: 20px;
+}
+
+header .greet .profilePicture {
+    width: 64px;
+    height: auto;
+    border-radius: 40px;
+}
+
+header .buttons {
+    grid-area: 3 / 4 / 6 / 6;
+    display: grid;
+    grid-auto-flow: column;
+    align-items: center;
+    justify-content: end;
+    gap: 12px;
+}
+
+header .buttons button {
+    width: 100px;
+    height: 32px;
+    border-radius: 20px;
+    border: none;
+    background-color: #1992d4;
+    color: white;
+}
